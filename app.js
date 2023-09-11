@@ -14,12 +14,11 @@ const getApi = async (foodName) => {
     const meals = data.meals;
 
     const cards = document.querySelector(".cards");
-    cards.innerHTML = "";
 
     meals.forEach((meal) => {
       const mealName = meal.strMeal;
       const mealImg = meal.strMealThumb;
-      const mealVideo = meal.strMealThumb;
+      const mealVideo = meal.strYoutube;
 
       const card = document.createElement("div");
       card.setAttribute("class", "card");
@@ -43,7 +42,7 @@ const getApi = async (foodName) => {
   }
 };
 
-searchForm.addEventListener("submit", async function (e) {
+searchForm.addEventListener("click", async function (e) {
   e.preventDefault();
 
   const value = inputValue.value;
