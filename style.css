@@ -72,3 +72,12 @@ select {
   --bs-card-border-color: rgb(0 0 0 / 0%) !important;
   --bs-card-border-radius: none;
 }
+
+.btn-primary {
+  --bs-btn-bg: #fd870d !important;
+  --bs-btn-border-color: #fd870d !important;
+}
+
+.form-control {
+  font-weight: 600 !important;
+}

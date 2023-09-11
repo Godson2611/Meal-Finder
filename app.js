@@ -14,6 +14,7 @@ const getApi = async (foodName) => {
     const meals = data.meals;
 
     const cards = document.querySelector(".cards");
+    cards.innerHTML = "";
 
     meals.forEach((meal) => {
       const mealName = meal.strMeal;
